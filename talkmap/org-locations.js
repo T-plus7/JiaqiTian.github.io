@@ -1,22 +1,22 @@
 var addressPoints = [
   [
-    "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
-    34.0536909,
-    -118.242766
+    "Hyper cluster states in $^{12}_{\\hphantom{1}\\Lambda}$B unveiled through Neural Network-Driven Microscopic Calculation<br />The 9th Asia-Pacific conference on Few-body problems in Physics; Van Lang University, Vietnam",
+    10.7628184,
+    106.6932824
   ],
   [
-    "Talk 2 on Relevant Topic in Your Field<br />London School of Testing; London, UK",
-    51.5074456,
-    -0.1277653
+    "Hypernuclear cluster states and \u039b-excitation Unveiled through Neural Network-Driven Calculation<br />The 15th International Conference on Hypernuclear and Strange Particle Physics; The University of Tokyo, Japan",
+    35.9019845,
+    139.9362283
   ],
   [
-    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
-    37.8708393,
-    -122.272863
+    "Competition between \u039b-excitation and clustering in $^{12}_{\\hphantom{1}\\Lambda}$B<br />The National Nuclear Reaction Conference (2025); Xi'an Jiaotong University, China",
+    31.2757194,
+    120.7354789
   ],
   [
-    "Talk 1 on Relevant Topic in Your Field<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
-    37.7879363,
-    -122.4075201
+    "Lambda motion and cluster states of $^{9-11}_{\\hphantom{9-1}\\Lambda}$Be predicted via Neural Networks guided microscopic calculation<br />The 7th Jiangsu Physics Spring Academic Conference; Soochow University, China",
+    31.2698123,
+    120.7285302
   ]
 ];
