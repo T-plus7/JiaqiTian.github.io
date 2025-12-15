@@ -104,7 +104,7 @@
     }
 
     &:first-child {
-      margin-left: -3rem;
+      margin-left: 0rem;
 
       a {
         border-top-left-radius: $border-radius;
@@ -178,7 +178,7 @@
   background: #483D8B; /* Dark slate blue - between navy and purple */
 
   .visible-links {
-    margin-left: 4rem; /* shift nav items right from CV */
+    margin-left: 2.5rem; /* shift nav items right from CV */
   }
 
   a {
