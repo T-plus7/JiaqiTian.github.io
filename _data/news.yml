@@ -1,0 +1,104 @@
+# News entries organized by year
+# Format: year, month, day, tag, description
+# Tag colors: Job (green), Milestone (dark gray), News (red), Award (gold)
+
+- year: 2025
+  month: 12
+  day: 05
+  tag: Award
+  tag_color: gold
+  description: "This guy received Hashimoto prize, ANPhA 1st prize and SNP School incentive prize at SNP School 2025."
+  award_title: "Hashimoto prize, ANPhA 1st prize and SNP School incentive prize"
+  award_source: "SNP School 2025, RCNP, Japan"
+  link_text: "SNP School 2025"
+  link_url: "https://sites.google.com/nex.phys.s.u-tokyo.ac.jp/snpsc2025"
+  sort_key: "2025-12-05"
+
+- year: 2025
+  month: 10
+  day: 09
+  tag: Award
+  tag_color: gold
+  description: "This guy received the National Graduate Scholarship (研究生国家奖学金)."
+  award_title: "National Graduate Scholarship (研究生国家奖学金)"
+  award_source: "Ministry of Education, China"
+  sort_key: "2025-10-09"
+
+- year: 2025
+  month: 07
+  day: 13
+  tag: Job
+  tag_color: green
+  description: "This guy went to High Energy Accelerator Research Organization (KEK) for a joint research program."
+  sort_key: "2025-07-13"
+
+- year: 2025
+  month: 07
+  day: 03
+  tag: Award
+  tag_color: gold
+  description: "This guy received the Outstanding Young Report Award at the 2025 National Nuclear Reaction Conference (2025全国核反应会议优秀青年报告奖)."
+  award_title: "Outstanding Young Report Award"
+  award_source: "National Nuclear Reaction Conference 2025 (全国核反应会议)"
+  link_text: "Outstanding Young Report Award"
+  link_url: "https://phy.xjtu.edu.cn/info/1158/9934.htm"
+  sort_key: "2025-07-03"
+
+- year: 2025
+  month: 09
+  day: 12
+  tag: Milestone
+  tag_color: purple
+  description: "First time to Publish an article as co-author in Physical Review C. This guy contributed the idea and guidance."
+  link_text: "Physical Review C"
+  link_url: "https://doi.org/10.1103/xdvj-hplt"
+  sort_key: "2025-09-12"
+
+
+- year: 2024
+  month: 12
+  day: 27
+  tag: Award
+  tag_color: gold
+  description: "This guy received funding from the China Scholarship Council."
+  award_title: "China Scholarship Council funding"
+  award_source: "China Scholarship Council"
+  sort_key: "2024-12-27"
+
+- year: 2024
+  month: 06
+  day: 14
+  tag: Milestone
+  tag_color: purple
+  description: "First time to Publish an article in Physical Letters B."
+  link_text: "Physical Letters B"
+  link_url: "https://www.sciencedirect.com/science/article/pii/S0370269324003745?via%3Dihub"
+  sort_key: "2024-06-14"
+
+- year: 2024
+  month: 05
+  day: 12
+  tag: Award
+  tag_color: gold
+  description: "This guy received the Outstanding Report Award at the 7th Jiangsu Physics Spring Academic Conference (第七届江苏物理春季学术会议优秀报告奖)."
+  award_title: "Outstanding Report Award"
+  award_source: "The 7th Jiangsu Physics Spring Academic Conference"
+  sort_key: "2024-05-12"
+
+- year: 2023
+  month: 11
+  day: 29
+  tag: Milestone
+  tag_color: purple
+  description: "First time to attend an international conference and give an oral talk at Workshop on Nuclear Cluster Physics (WNCP2023)."
+  link_text: "WNCP2023"
+  link_url: "https://indico.rcnp.osaka-u.ac.jp/event/2187/overview"
+  sort_key: "2023-11-29"
+
+- year: 2023
+  month: 05
+  day: 14
+  tag: Milestone
+  tag_color: purple
+  description: "First time to give a conference talk at the 18th National Nuclear Physics Conference."
+  sort_key: "2023-05-14"

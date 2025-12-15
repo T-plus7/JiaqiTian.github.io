@@ -1,0 +1,104 @@
+---
+layout: single
+title: "News"
+permalink: /news/
+author_profile: true
+---
+
+{% include base_path %}
+
+<style>
+.news-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: white;
+  vertical-align: middle;
+}
+
+.news-tag-green {
+  background-color: #28a745;
+}
+
+.news-tag-dark-gray {
+  background-color: #6c757d;
+}
+
+.news-tag-red {
+  background-color: #dc3545;
+}
+
+.news-tag-purple {
+  background-color: #8a2be2;
+}
+
+.news-tag-gold {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.news-year {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.news-year:first-child {
+  margin-top: 0;
+}
+
+.news-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5em;
+}
+
+.news-list li {
+  margin-bottom: 0.8em;
+  line-height: 1.6;
+  background: #f8f8fb;
+  border-radius: 4px;
+  padding: 0.75em 0.9em;
+}
+
+.news-description {
+  display: inline;
+}
+
+.news-description a {
+  color: #52adc8;
+  text-decoration: none;
+}
+
+.news-description a:hover {
+  text-decoration: underline;
+}
+</style>
+
+{% assign news_by_year = site.data.news | group_by: "year" | sort: "name" | reverse %}
+
+{% for year_group in news_by_year %}
+  <h2 class="news-year">{{ year_group.name }}</h2>
+  <ul class="news-list">
+    {% assign sorted_items = year_group.items | sort: "sort_key" | reverse %}
+    {% for item in sorted_items %}
+      <li style="margin-bottom: 1em;">
+        <span class="news-tag news-tag-{{ item.tag_color | default: 'red' }}">{{ item.tag }}</span>
+        <strong>{{ item.year }}.{{ item.month | prepend: '0' | slice: -2, 2 }}.{{ item.day | prepend: '0' | slice: -2, 2 }}：</strong>
+        <span class="news-description">
+          {% if item.link_text and item.link_url %}
+            {% assign desc_parts = item.description | split: item.link_text %}
+            {{ desc_parts[0] }}<a href="{{ item.link_url }}" style="color: #52adc8;">{{ item.link_text }}</a>{{ desc_parts[1] }}
+          {% else %}
+            {{ item.description }}
+          {% endif %}
+        </span>
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}

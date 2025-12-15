@@ -3,34 +3,186 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
+mathjax: true
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
+<style>
+.pub-hero {
+  margin: 0 0 1.5rem 0;
+}
+.pub-hero .note {
+  font-style: italic;
+  color: #555;
+}
+.pub-filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0 1.5rem 0;
+}
+.pub-filters button {
+  padding: 0.45rem 0.9rem;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.pub-filters button.active {
+  background: #001f3f;
+  color: #fff;
+  border-color: #001f3f;
+}
+.pub-year {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.pub-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.pub-item {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0.75rem 0;
+}
+.pub-title {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.pub-title a {
+  color: #001f3f;
+  text-decoration: none;
+}
+.pub-title a:hover {
+  text-decoration: underline;
+}
+.pub-meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.35rem;
+}
+.pub-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+}
+.pub-badge-article { background: #1f77b4; }
+.pub-badge-proceeding { background: #2ca02c; }
+.pub-badge-thesis { background: #9467bd; }
+.pub-badge-other { background: #888; }
+.pub-badge-letter { background: #dc143c; }
+.pub-badge-regular { background: #17a2b8; color: #fff; }
+.pub-citation {
+  font-size: 0.95rem;
+  color: #333;
+}
+.pub-hidden { display: none; }
+.pub-author-bold {
+  font-weight: 700;
+}
+</style>
+
+<div class="pub-hero">
+  {% if site.author.googlescholar %}
+    <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  {% endif %}
+  <!-- <p class="note">Though challenging, I aim to publish work that fosters new collaborations.</p> -->
+</div>
+
+<div class="pub-filters">
+  <button class="active" data-filter="all">Show all</button>
+  <button data-filter="article">Article</button>
+  <button data-filter="proceeding">Proceeding</button>
+  <button data-filter="thesis">Thesis</button>
+</div>
+
+{% assign pubs = site.publications | sort: "date" | reverse %}
+{% assign pubs_by_year = pubs | group_by_exp: "pub", "pub.date | date: '%Y'" %}
+
+{% for year in pubs_by_year %}
+  <h2 class="pub-year">{{ year.name }}</h2>
+  <ul class="pub-list">
+    {% for pub in year.items %}
+      {% assign ptype = pub.type | default: 'article' | downcase %}
+      {% if ptype == 'article' or ptype == 'proceeding' or ptype == 'thesis' %}
+        {% assign badge_class = 'pub-badge-' | append: ptype %}
+      {% else %}
+        {% assign badge_class = 'pub-badge-other' %}
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
+      {% assign paper_type = pub.paper_type | default: '' | downcase %}
+      {% if paper_type == 'letter' %}
+        {% assign type_badge_class = 'pub-badge-letter' %}
+        {% assign type_badge_text = 'Letter' %}
+      {% elsif paper_type == 'regular' %}
+        {% assign type_badge_class = 'pub-badge-regular' %}
+        {% assign type_badge_text = 'Regular Article' %}
+      {% else %}
+        {% assign type_badge_class = '' %}
+        {% assign type_badge_text = '' %}
+      {% endif %}
+      {% assign ptitle = pub.title | markdownify | remove: '<p>' | remove: '</p>' %}
+      <li class="pub-item" data-type="{{ ptype }}">
+        <div class="pub-title">
+          {% if pub.paperurl %}
+            <a href="{{ pub.paperurl }}">{{ ptitle }}</a>
+          {% else %}
+            <a href="{{ pub.url | relative_url }}">{{ ptitle }}</a>
+          {% endif %}
+        </div>
+        <div class="pub-meta">
+          {% if type_badge_text != '' %}<span class="pub-badge {{ type_badge_class }}">{{ type_badge_text }}</span>{% endif %}
+          {% if pub.venue %}<span>{{ pub.venue }}</span>{% endif %}
+          {% if pub.date %}<span>{{ pub.date | date: "%b %d, %Y" }}</span>{% endif %}
+        </div>
+        {% if pub.citation %}
+          {% assign pcite_raw = pub.citation | markdownify | remove: '<p>' | remove: '</p>' %}
+          {% assign pcite = pcite_raw | replace: 'Jiaqi Tian', '<span class="pub-author-bold">Jiaqi Tian</span>' %}
+          <div class="pub-citation">{{ pcite }}</div>
+        {% endif %}
+      </li>
     {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+  </ul>
+{% endfor %}
 
+<script>
+(function() {
+  const buttons = document.querySelectorAll('.pub-filters button');
+  const items = document.querySelectorAll('.pub-item');
 
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      items.forEach(item => {
+        const type = item.dataset.type;
+        if (filter === 'all' || type === filter) {
+          item.classList.remove('pub-hidden');
+        } else {
+          item.classList.add('pub-hidden');
+        }
+      });
+    });
+  });
+})();
+</script>
 
+<!-- MathJax for LaTeX rendering -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

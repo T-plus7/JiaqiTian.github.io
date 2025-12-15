@@ -104,7 +104,7 @@
     }
 
     &:first-child {
-      margin-left: 0;
+      margin-left: -3rem;
 
       a {
         border-top-left-radius: $border-radius;
@@ -175,17 +175,21 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: var(--global-bg-color);
+  background: #483D8B; /* Dark slate blue - between navy and purple */
+
+  .visible-links {
+    margin-left: 4rem; /* shift nav items right from CV */
+  }
 
   a {
     display: block;
     margin: 0 1rem;
     padding: 0.5rem 0;
-    color: var(--global-masthead-link-color);
+    color: #ffffff; /* White text for navy background */
     text-decoration: none;
 
     &:hover {
-      color: var(--global-masthead-link-color-hover);
+      color: lightgrey; /* Light gray on hover */
     }
   }
 
@@ -196,7 +200,7 @@
     padding: 0 0.5rem;
     border: 0;
     outline: none;
-    background-color: var(--global-bg-color);
+    background-color: #483D8B; /* Dark slate blue - between navy and purple */
     color: #fff;
     cursor: pointer;
     z-index: 100;
@@ -268,17 +272,18 @@
     padding: 5px;
     border: 1px solid var(--global-border-color);
     border-radius: $border-radius;
-    background: var(--global-bg-color);
+    background: #483D8B; /* Dark slate blue - between navy and purple */
     box-shadow: 0 0 10px rgba(#000, 0.25);
 
     a {
       margin: 0;
       padding: 10px 20px;
       font-size: $type-size-5;
+      color: #ffffff; /* White text for navy background */
 
       &:hover {
-        color: var(--global-masthead-link-color-hover);
-        background: var(--global-border-color);
+        color: lightgrey; /* Light gray on hover */
+        background: rgba(255, 255, 255, 0.1); /* Light overlay on hover */
       }
     }
 

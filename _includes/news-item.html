@@ -1,0 +1,18 @@
+{% comment %}
+  News item template with colored tags
+  Usage: {% include news-item.html year=2025 month=04 day=01 tag="Job" tag_color="green" description="..." %}
+{% endcomment %}
+
+<li style="margin-bottom: 1em;">
+  <span class="news-tag news-tag-{{ include.tag_color | default: 'red' }}">{{ include.tag }}</span>
+  <strong>({{ include.year }}, {{ include.month | prepend: '0' | slice: -2, 2 }}, {{ include.day | prepend: '0' | slice: -2, 2 }}):</strong>
+  <span class="news-description">
+    {% if include.link_text and include.link_url %}
+      {{ include.description | replace: include.link_text, '<a href="' | append: include.link_url | append: '" style="color: #52adc8;">' | append: include.link_text | append: '</a>' | markdownify }}
+    {% else %}
+      {{ include.description }}
+    {% endif %}
+  </span>
+</li>
+
+

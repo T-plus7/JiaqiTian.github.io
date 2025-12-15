@@ -1,16 +1,165 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks"
 permalink: /talks/
 author_profile: true
+mathjax: true
 ---
 
-{% if site.talkmap_link == true %}
+{% include base_path %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<style>
+.talks-hero {
+  margin: 0 0 1.5rem 0;
+}
+.talks-group {
+  margin-top: 1.5rem;
+}
+.talks-year {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.talk-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.talk-item {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0.85rem 0;
+}
+.talk-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+.talk-title a {
+  color: #001f3f;
+  text-decoration: none;
+}
+.talk-title a:hover { text-decoration: underline; }
+.talk-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+.talk-venue {
+  font-size: 0.95rem;
+  color: #333;
+}
+.talk-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+}
+.talk-badge-talk { background: #1f77b4; }
+.talk-badge-conference { background: #dc143c; }
+.talk-badge-workshop { background: #17a2b8; }
+.talk-badge-other { background: #888; }
+.talk-badge-award { background: #ffc107; color: #333; }
+.talk-award {
+  margin-top: 0.2rem;
+}
+.talk-award-text {
+  margin-left: 0.35rem;
+  color: #333;
+  font-size: 0.95rem;
+}
 
-{% endif %}
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .talk-title a { color: #ffffff; }
+  .talk-meta { color: #cccccc; }
+  .talk-venue { color: #c6b3ff; }
+  .talk-item { border-bottom-color: #444; }
+  .talk-award-text { color: #e0e0e0; }
+}
+</style>
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+<div class="talks-hero">
+  {% if site.talkmap_link == true %}
+    <p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+  {% endif %}
+</div>
+
+{% assign talks = site.talks | sort: "date" | reverse %}
+{% assign talks_by_year = talks | group_by_exp: "t", "t.date | date: '%Y'" %}
+
+{% for group in talks_by_year %}
+  <div class="talks-group">
+    <div class="talks-year">{{ group.name }}</div>
+    <ul class="talk-list">
+      {% for post in group.items %}
+        {% assign title = post.title | markdownify | remove: '<p>' | remove: '</p>' %}
+        {% assign ttype = post.type | default: 'Talk' | downcase %}
+        {% if ttype contains 'conf' %}
+          {% assign badge_class = 'talk-badge-conference' %}
+          {% assign badge_text = 'Conference' %}
+        {% elsif ttype contains 'workshop' %}
+          {% assign badge_class = 'talk-badge-workshop' %}
+          {% assign badge_text = 'Workshop' %}
+        {% elsif ttype contains 'talk' %}
+          {% assign badge_class = 'talk-badge-talk' %}
+          {% assign badge_text = 'Talk' %}
+        {% else %}
+          {% assign badge_class = 'talk-badge-other' %}
+          {% assign badge_text = post.type | default: 'Talk' %}
+        {% endif %}
+        <li class="talk-item">
+          <div class="talk-title">
+            <a href="{{ post.url | relative_url }}">{{ title }}</a>
+          </div>
+          <div class="talk-meta">
+            <span class="talk-badge {{ badge_class }}">{{ badge_text }}</span>
+            {% if post.location %}<span>{{ post.location }}</span>{% endif %}
+            {% if post.date %}<span>{{ post.date | date: "%b %-d, %Y" }}</span>{% endif %}
+          </div>
+          {% if post.award %}
+            <div class="talk-award">
+              {% if post.link %}
+                <span class="talk-badge talk-badge-award"><a href="{{ post.link }}" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">Award</a></span>
+              {% else %}
+                <span class="talk-badge talk-badge-award">Award</span>
+              {% endif %}
+              <span class="talk-award-text">
+                Received the
+                {% if post.link %}
+                  <a href="{{ post.link }}" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">{{ post.award }}</a>
+                {% else %}
+                  {{ post.award }}
+                {% endif %}
+              </span>
+            </div>
+          {% endif %}
+          {% if post.venue %}
+            <div class="talk-venue">
+              {% if post.link %}
+                <em><a href="{{ post.link }}" target="_blank" rel="noopener">{{ post.venue }}</a></em>
+              {% else %}
+                <em>{{ post.venue }}</em>
+              {% endif %}
+            </div>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endfor %}
+
+<!-- MathJax for LaTeX rendering -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
