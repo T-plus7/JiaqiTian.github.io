@@ -72,9 +72,9 @@ Contact
 
 Education
 ======
-* Joint research student, High Energy Accelerator Research Organization (KEK), **Jul. 2025 – Feb. 2026**
-* M.S. in Physics, College of Physics, Nanjing University of Aeronautics and Astronautics, **Sep. 2023 – now**
-* B.S. in Applied Physics, College of Physics, Nanjing University of Aeronautics and Astronautics, **Sep. 2019 – Jun. 2023**
+* **Jul. 2025 – Feb. 2026**: Joint research student (current), High Energy Accelerator Research Organization (KEK)
+* **Sep. 2023 – now**: M.Sc. College of Physics, Nanjing University of Aeronautics and Astronautics
+* **Sep. 2019 – Jun. 2023**: B.Sc. College of Physics, Nanjing University of Aeronautics and Astronautics
 
 Awards
 ======

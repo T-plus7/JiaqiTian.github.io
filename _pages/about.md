@@ -8,9 +8,9 @@ redirect_from:
 ---
 
 
-Joint research student\\
+• Joint research student\\
 KEK Theory Center, High Energy Accelerator Research Organization (KEK)\\
-Graduate student\\
+• Master student\\
 College of Physics, Nanjing University of Aeronautics and Astronautics  
 
 E-mail: jiaqi.tian@nuaa.edu.cn\\

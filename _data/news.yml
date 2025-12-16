@@ -56,16 +56,6 @@
 
 
 - year: 2024
-  month: 12
-  day: 27
-  tag: Award
-  tag_color: gold
-  description: "This guy received funding from the China Scholarship Council."
-  award_title: "China Scholarship Council funding"
-  award_source: "China Scholarship Council"
-  sort_key: "2024-12-27"
-
-- year: 2024
   month: 06
   day: 14
   tag: Milestone
