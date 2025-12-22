@@ -6,7 +6,7 @@
   {% assign teaser = site.teaser %}
 {% endif %}
 
-{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% assign href = "" %}
 {% if post.link %}
   {% assign href = post.link %}

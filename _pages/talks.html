@@ -62,6 +62,7 @@ mathjax: true
 .talk-badge-talk { background: #1f77b4; }
 .talk-badge-conference { background: #dc143c; }
 .talk-badge-workshop { background: #17a2b8; }
+.talk-badge-seminar { background: #888; }
 .talk-badge-other { background: #888; }
 .talk-badge-award { background: #ffc107; color: #333; }
 .talk-award {
@@ -105,6 +106,9 @@ mathjax: true
         {% elsif ttype contains 'workshop' %}
           {% assign badge_class = 'talk-badge-workshop' %}
           {% assign badge_text = 'Workshop' %}
+        {% elsif ttype contains 'seminar' %}
+          {% assign badge_class = 'talk-badge-seminar' %}
+          {% assign badge_text = 'Seminar' %}
         {% elsif ttype contains 'talk' %}
           {% assign badge_class = 'talk-badge-talk' %}
           {% assign badge_text = 'Talk' %}

@@ -10,13 +10,13 @@
 main:
   - title: "CV"
     url: /cv/
-
+    
   - title: "Research"
     url: /research/
 
   - title: "Collaboration"
     url: /collaboration/
-
+    
   - title: "Publication"
     url: /publications/
 
