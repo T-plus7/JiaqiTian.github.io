@@ -15,6 +15,11 @@ var addressPoints = [
     120.7354789
   ],
   [
+    "Parity coupling effect in $^{12}_{\\hphantom{1}\\Lambda}$B Unveiled through Neural Network-Driven Microscopic Calculation<br />Tokai meeting; KEK Tokai Campus, Japan",
+    36.4633986,
+    140.5976186
+  ],
+  [
     "Lambda motion and cluster states of $^{9-11}_{\\hphantom{9-1}\\Lambda}$Be predicted via Neural Networks guided microscopic calculation<br />The 7th Jiangsu Physics Spring Academic Conference; Soochow University, China",
     31.2698123,
     120.7285302
