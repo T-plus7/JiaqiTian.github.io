@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Jiaqi Tian-Theoretical Nuclear Physics"
+title                    : "Tian's Homepage"
 title_separator          : "-"
 name                     : &name "Jiaqi Tian"
 description              : &description "Personal academic website of Jiaqi Tian. Researching Hypernuclei, Cluster Models, and AI-driven physics."
