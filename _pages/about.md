@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Jiaqi Tian"
+
 author_profile: true
 redirect_from: 
   - /about/
@@ -16,7 +16,11 @@ College of Physics, Nanjing University of Aeronautics and Astronautics
 E-mail: jiaqi.tian@nuaa.edu.cn\\
 E-mail: jiaqi.tian.np@outlook.com
 
-I currently work on nuclear and hypernuclear structure, focusing on clustering phenomena and neural-network–assisted microscopic calculations.
+
+<h1>Jiaqi Tian (田家奇)</h1>
+
+I am a doctoral student at Tohoku University, specializing in Theoretical Nuclear Physics. My research focuses on Hypernuclei, cluster phenomena, and neural-network–assisted microscopic calculations.
+
 
 News
 ------

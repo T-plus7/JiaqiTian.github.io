@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Tian's Homepage"
+title                    : "Jiaqi Tian - Theoretical Nuclear Physics | Tohoku University"
 title_separator          : "-"
 name                     : &name "Jiaqi Tian"
-description              : &description "Jiaqi Tian's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Personal academic website of Jiaqi Tian, a doctoral student in Theoretical Nuclear Physics at Tohoku University. Researching Hypernuclei, Cluster Models, and AI-driven physics."
 mathjax                  : true
 url                      : https://t-plus7.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
