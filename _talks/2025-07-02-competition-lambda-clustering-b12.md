@@ -1,5 +1,5 @@
 ---
-title: "Competition between Λ-excitation and clustering in $^{12}_{\\hphantom{1}\\Lambda}$B"
+title: "Competition between Λ-excitation and clustering in $^{12}_{\\hphantom{1}\\Lambda}\\mathrm{B}$"
 collection: talks
 type: "Conference"
 permalink: /talks/2025-07-02-competition-lambda-clustering-b12

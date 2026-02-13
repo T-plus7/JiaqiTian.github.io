@@ -1,5 +1,5 @@
 ---
-title: "Hyper cluster states in $^{12}_{\\hphantom{1}\\Lambda}$B unveiled through Neural Network-Driven Microscopic Calculation"
+title: "Hyper cluster states in $^{12}_{\\hphantom{1}\\Lambda}\\mathrm{B}$ unveiled through Neural Network-Driven Microscopic Calculation"
 collection: talks
 type: "Conference"
 permalink: /talks/2025-09-12-hyper-cluster-states-b12-wncp

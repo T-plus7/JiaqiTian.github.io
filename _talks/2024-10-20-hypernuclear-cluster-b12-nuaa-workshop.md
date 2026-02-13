@@ -1,5 +1,5 @@
 ---
-title: "Hypernuclear cluster states of $^{12}_{\\hphantom{1}\\Lambda}$B Unveiled through Neural Network-Driven Microscopic Calculation"
+title: "Hypernuclear cluster states of $^{12}_{\\hphantom{1}\\Lambda}\\mathrm{B}$ Unveiled through Neural Network-Driven Microscopic Calculation"
 collection: talks
 type: "Workshop"
 permalink: /talks/2024-10-20-hypernuclear-cluster-b12-nuaa-workshop

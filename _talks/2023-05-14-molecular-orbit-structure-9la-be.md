@@ -1,5 +1,5 @@
 ---
-title: "Λ-Molecular Orbit Structure of $^{9}_{\\Lambda}$Be Predicted by Control Neural Networks"
+title: "Λ-Molecular Orbit Structure of $^{9}_{\\Lambda}\\mathrm{Be}$ Predicted by Control Neural Networks"
 collection: talks
 type: "Conference"
 permalink: /talks/2023-05-14-molecular-orbit-structure-9la-be
