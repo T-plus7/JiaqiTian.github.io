@@ -85,8 +85,8 @@ mathjax: true
 </style>
 
 <div class="talks-hero">
-  {% if site.talkmap_link == true %}
-    <p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+{% if site.talkmap_link == true %}
+<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
   {% endif %}
 </div>
 
@@ -150,7 +150,7 @@ mathjax: true
                 <em>{{ post.venue }}</em>
               {% endif %}
             </div>
-          {% endif %}
+{% endif %}
         </li>
       {% endfor %}
     </ul>

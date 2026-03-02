@@ -13,12 +13,12 @@ main:
     
   - title: "Research"
     url: /research/
-
-  - title: "Collaboration"
-    url: /collaboration/
     
   - title: "Publication"
     url: /publications/
 
   - title: "Talk"
     url: /talks/
+
+  - title: "Collaboration"
+    url: /collaboration/

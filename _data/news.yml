@@ -92,3 +92,13 @@
   tag_color: purple
   description: "First time to give a conference talk at the 18th National Nuclear Physics Conference."
   sort_key: "2023-05-14"
+
+- year: 2026
+  month: 03
+  day: 02
+  tag: Milestone
+  tag_color: purple
+  description: "First time to publish an article in Physical Review C."
+  link_text: "Physical Review C"
+  link_url: "https://doi.org/10.1103/xdvj-hplt"
+  sort_key: "2026-03-02"
