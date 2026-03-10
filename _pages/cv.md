@@ -47,6 +47,19 @@ redirect_from:
   font-size: 1.01em;
   color: #444;
 }
+
+/* Dark theme: CV main title white, CV links use link color */
+html[data-theme="dark"] {
+  .cv-hero h1 {
+    color: var(--global-text-color);
+  }
+
+  .cv-pub-title a,
+  .talk-title-cv a {
+    /* Same lighter blue as publications/talks titles */
+    color: #a8e4ff;
+  }
+}
 </style>
 
 <div class="cv-hero">

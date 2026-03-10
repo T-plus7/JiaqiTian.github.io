@@ -74,13 +74,27 @@ mathjax: true
   font-size: 0.95rem;
 }
 
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  .talk-title a { color: #ffffff; }
-  .talk-meta { color: #cccccc; }
-  .talk-venue { color: #c6b3ff; }
-  .talk-item { border-bottom-color: #444; }
-  .talk-award-text { color: #e0e0e0; }
+/* Dark mode: lighter blue titles, white body text */
+html[data-theme="dark"] {
+  .talk-title a {
+    color: #a8e4ff;
+  }
+
+  .talk-title a:hover {
+    color: #d0f3ff;
+  }
+
+  .talk-meta,
+  .talk-meta span,
+  .talk-venue,
+  .talk-venue a,
+  .talk-award-text {
+    color: var(--global-text-color);
+  }
+
+  .talk-item {
+    border-bottom-color: #444;
+  }
 }
 </style>
 

@@ -89,12 +89,28 @@ mathjax: true
 .pub-author-bold {
   font-weight: 700;
 }
+
+/* Dark theme overrides */
+html[data-theme="dark"] {
+  .pub-title a {
+    /* Lighter blue, closer to white */
+    color: #a8e4ff;
+  }
+
+  .pub-title a:hover {
+    color: #d0f3ff;
+  }
+
+  .pub-meta,
+  .pub-meta span,
+  .pub-citation {
+    color: var(--global-text-color);
+  }
+}
 </style>
 
 <div class="pub-hero">
-  {% if site.author.googlescholar %}
-    <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-  {% endif %}
+  <div class="wordwrap">You can also find my articles on <a href="https://inspirehep.net/authors/3093825">my INSPIRE-HEP profile</a>.</div>
   <!-- <p class="note">Though challenging, I aim to publish work that fosters new collaborations.</p> -->
 </div>
 

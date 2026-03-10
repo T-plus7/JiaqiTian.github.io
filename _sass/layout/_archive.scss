@@ -48,6 +48,27 @@
   }
 }
 
+/* Brighter publication/title links in dark mode */
+html[data-theme="dark"] {
+  .archive__item-title a {
+    color: #69d6ff;
+  }
+
+  .archive__item-title a:hover {
+    color: #9ae5ff;
+  }
+
+  /* Make publication meta text as bright as body text */
+  .list__item .page__meta,
+  .grid__item .page__meta,
+  .list__item .page__meta a,
+  .grid__item .page__meta a,
+  .list__item .archive__item-excerpt,
+  .grid__item .archive__item-excerpt {
+    color: var(--global-text-color);
+  }
+}
+
 /* remove border*/
 .page__content {
 

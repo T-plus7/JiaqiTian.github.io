@@ -22,7 +22,7 @@ window.MathJax = {
 /* Hide default title rendered by layout on this page only */
 .page__title { display: none; }
 .research-hero h1 {
-  color: #4b4b4b; /* Dark gray to match typical academic styling */
+  color: #4b4b4b; /* Light theme: dark gray */
   font-size: 2.4em;
   font-weight: 800;
   margin: 0 0 0.2em 0;
@@ -32,6 +32,11 @@ window.MathJax = {
   height: 3px;
   background: #c0c0c0;
   margin: 0.3em 0 1em 0;
+}
+
+/* Dark theme: use same white as body text */
+html[data-theme="dark"] .research-hero h1 {
+  color: var(--global-text-color);
 }
 </style>
 
