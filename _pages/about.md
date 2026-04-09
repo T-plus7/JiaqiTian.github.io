@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-# Jiaqi Tian (田家奇)
+<h1>Jiaqi Tian (田家奇)</h1>
 
 I am Jiaqi Tian, specializing in Theoretical Nuclear Physics. My research focuses on Hypernuclei, cluster phenomena, and neural-network–assisted microscopic calculations.
 
