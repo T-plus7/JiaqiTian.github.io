@@ -29,10 +29,19 @@
   day: 13
   tag: Job
   tag_color: green
-  description: "This guy went to High Energy Accelerator Research Organization (KEK) for a joint research program."
+  description: "This guy move to High Energy Accelerator Research Organization (KEK) for a joint research program."
   sort_key: "2025-07-13"
 
+- year: 2026
+  month: 04
+  day: 07
+  tag: Job
+  tag_color: green
+  description: "This guy move to Tohoku University as a PhD student."
+  sort_key: "2026-04-07"
+
 - year: 2025
+
   month: 07
   day: 03
   tag: Award

@@ -1,4 +1,5 @@
 ---
+
 permalink: /
 
 author_profile: true
@@ -7,22 +8,18 @@ redirect_from:
   - /about.html
 ---
 
-<h1>Jiaqi Tian (田家奇)</h1>
+# Jiaqi Tian (田家奇)
 
 I am Jiaqi Tian, specializing in Theoretical Nuclear Physics. My research focuses on Hypernuclei, cluster phenomena, and neural-network–assisted microscopic calculations.
-*   **Joint research student**\\
-KEK Theory Center, High Energy Accelerator Research Organization (KEK)
-*   **Master student**\\
-College of Physics, Nanjing University of Aeronautics and Astronautics
 
-E-mail: jiaqi.tian@nuaa.edu.cn\\
-E-mail: jiaqi.tian.np@outlook.com
+- **PhD student**  
+  Department of Physics, Tohoku University
 
+E-mail: [tian.jiaqi.r4@dc.tohoku.ac.jp](mailto:tian.jiaqi.r4@dc.tohoku.ac.jp)  
+E-mail: [jiaqi.tian.np@outlook.com](mailto:jiaqi.tian.np@outlook.com)
 
+## News
 
-
-News
-------
 <style>
 .news-tag {
   display: inline-block;

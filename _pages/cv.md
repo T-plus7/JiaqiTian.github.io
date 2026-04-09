@@ -81,12 +81,15 @@ window.MathJax = {
 
 Contact
 ======
+* Email: tian.jiaqi.r4@dc.tohoku.ac.jp
 * Email: jiaqi.tian.np@outlook.com
+* Location: Sendai, Japan
 
 Education
 ======
-* **Jul. 2025 – Feb. 2026**: Joint research student (current), High Energy Accelerator Research Organization (KEK)
-* **Sep. 2023 – now**: M.Sc. College of Physics, Nanjing University of Aeronautics and Astronautics
+* **Apr. 2026 – now**: PhD student, Department of Physics, Tohoku University
+* **Jul. 2025 – Feb. 2026**: Joint research student, High Energy Accelerator Research Organization (KEK)
+* **Sep. 2023 – Mar. 2026**: M.Sc. College of Physics, Nanjing University of Aeronautics and Astronautics
 * **Sep. 2019 – Jun. 2023**: B.Sc. College of Physics, Nanjing University of Aeronautics and Astronautics
 
 Awards
