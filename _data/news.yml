@@ -7,8 +7,8 @@
   day: 05
   tag: Award
   tag_color: gold
-  description: "This guy received Hashimoto prize, ANPhA 1st prize and SNP School incentive prize at SNP School 2025."
-  award_title: "Hashimoto prize, ANPhA 1st prize and SNP School incentive prize"
+  description: "This guy received the Hashimoto Prize, ANPhA 1st Prize, and SNP School Incentive Prize at SNP School 2025."
+  award_title: "Hashimoto Prize, ANPhA 1st Prize, and SNP School Incentive Prize"
   award_source: "SNP School 2025, RCNP, Japan"
   link_text: "SNP School 2025"
   link_url: "https://sites.google.com/nex.phys.s.u-tokyo.ac.jp/snpsc2025"
@@ -29,7 +29,7 @@
   day: 13
   tag: Job
   tag_color: green
-  description: "This guy move to High Energy Accelerator Research Organization (KEK) for a joint research program."
+  description: "This guy moved to the High Energy Accelerator Research Organization (KEK) for a joint research program."
   sort_key: "2025-07-13"
 
 - year: 2026
@@ -37,7 +37,7 @@
   day: 07
   tag: Job
   tag_color: green
-  description: "This guy move to Tohoku University as a PhD student."
+  description: "This guy moved to Tohoku University as a PhD student."
   sort_key: "2026-04-07"
 
 - year: 2025
@@ -58,7 +58,7 @@
   day: 12
   tag: Milestone
   tag_color: purple
-  description: "First time to Publish an article as co-author in Physical Review C. This guy contributed the idea and guidance."
+  description: "This guy published an article as a co-author in Physical Review C for the first time, contributing the idea and guidance."
   link_text: "Physical Review C"
   link_url: "https://doi.org/10.1103/xdvj-hplt"
   sort_key: "2025-09-12"
@@ -69,8 +69,8 @@
   day: 14
   tag: Milestone
   tag_color: purple
-  description: "First time to Publish an article in Physical Letters B."
-  link_text: "Physical Letters B"
+  description: "Published an article in Physics Letters B for the first time."
+  link_text: "Physics Letters B"
   link_url: "https://www.sciencedirect.com/science/article/pii/S0370269324003745?via%3Dihub"
   sort_key: "2024-06-14"
 
@@ -89,7 +89,7 @@
   day: 29
   tag: Milestone
   tag_color: purple
-  description: "First time to attend an international conference and give an oral talk at Workshop on Nuclear Cluster Physics (WNCP2023)."
+  description: "Attended an international conference and gave an oral talk for the first time at the Workshop on Nuclear Cluster Physics (WNCP2023)."
   link_text: "WNCP2023"
   link_url: "https://indico.rcnp.osaka-u.ac.jp/event/2187/overview"
   sort_key: "2023-11-29"
@@ -99,7 +99,7 @@
   day: 14
   tag: Milestone
   tag_color: purple
-  description: "First time to give a conference talk at the 18th National Nuclear Physics Conference."
+  description: "Gave a conference talk for the first time at the 18th National Nuclear Physics Conference."
   sort_key: "2023-05-14"
 
 - year: 2026
