@@ -2,6 +2,18 @@
 # Format: year, month, day, tag, description
 # Tag colors: Job (green), Milestone (dark gray), News (red), Award (gold)
 
+- year: 2026
+  month: 09
+  day: 09
+  tag: Award
+  tag_color: gold
+  description: "This guy received the ANPhA 2nd Prize and SNP School Incentive Prize at SNP School 2026."
+  award_title: "ANPhA 2nd Prize and SNP School Incentive Prize"
+  award_source: "SNP School 2026, Tohoku University, Japan"
+  link_text: "SNP School 2026"
+  link_url: "https://sites.google.com/nex.phys.s.u-tokyo.ac.jp/snpschool2026/"
+  sort_key: "2026-09-09"
+
 - year: 2025
   month: 12
   day: 05
